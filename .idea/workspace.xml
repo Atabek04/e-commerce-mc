@@ -4,21 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab2578e-7f77-419f-9a95-8025fa2ee356" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/customer/CustomerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/exception/CustomerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/handler/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="dab2578e-7f77-419f-9a95-8025fa2ee356" name="Changes" comment="implemented Customer service">
+      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/applicatoin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/category/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/exception/EntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/exception/ProductPurchaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/handler/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductPurchaseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductPurchaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V1__init_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V2__insert_data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/customer/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/customer/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/otabek/ecommerce/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/discovery/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/services/discovery/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,33 +59,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CustomerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker...: Compose Deployment.executor": "Run",
+    "Docker.e-commerce-mc: Compose Deployment.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ConfigServerApplication.executor": "Debug",
+    "Spring Boot.CustomerApplication.executor": "Debug",
+    "Spring Boot.DiscoveryApplication.executor": "Debug",
+    "Spring Boot.ProductApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "openjdk-22",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/salahaddin/IdeaProjects/microservices/e-commerce-mc/services/product/src/main/java/com/otabek/ecommerce",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "spring",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "PostgreSQL"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.otabek.ecommerce.exception" />
+      <recent name="com.otabek.ecommerce.product" />
       <recent name="com.otabek.ecommerce.handler" />
       <recent name="com.otabek.ecommerce.customer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce" />
+      <recent name="$PROJECT_DIR$/services/product/src/main/resources/db/migration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/services" />
@@ -93,7 +125,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+  <component name="RunManager" selected="Docker.e-commerce-mc: Compose Deployment">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.otabek.configserver.ConfigServerApplication" />
@@ -115,6 +147,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.otabek.ecommerce.ProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="..: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="../docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="e-commerce-mc: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="../../e-commerce-mc/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.e-commerce-mc: Compose Deployment" />
+        <item itemvalue="Docker...: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringGeneralSettings">
@@ -140,12 +207,27 @@
       <workItem from="1722244703640" duration="1930000" />
       <workItem from="1722246675697" duration="2725000" />
       <workItem from="1722252174808" duration="70000" />
-      <workItem from="1722252254918" duration="2774000" />
+      <workItem from="1722252254918" duration="13652000" />
+      <workItem from="1722342776291" duration="3588000" />
+      <workItem from="1722593655414" duration="6513000" />
     </task>
+    <task id="LOCAL-00001" summary="implemented Customer service">
+      <option name="closed" value="true" />
+      <created>1722255235890</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722255235890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implemented Customer service" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Customer service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
