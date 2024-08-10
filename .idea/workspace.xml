@@ -4,28 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dab2578e-7f77-419f-9a95-8025fa2ee356" name="Changes" comment="implemented Customer service">
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/applicatoin.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/category/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/exception/EntityNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/exception/ProductPurchaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/handler/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductPurchaseRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductPurchaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce/product/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V1__init_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V2__insert_data.sql" afterDir="false" />
+    <list default="true" id="dab2578e-7f77-419f-9a95-8025fa2ee356" name="Changes" comment="implemented Product service">
+      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/order-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/config/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/customer/CustomerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/customer/CustomerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/order/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/order/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/order/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/order/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/order/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/orderline/OrderLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/orderline/OrderLineMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/orderline/OrderLineRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/orderline/OrderLineRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/orderline/OrderLineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/product/ProductClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/product/PurchaseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/otabek/ecommerce/product/PurchaseResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
@@ -83,7 +86,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "spring",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -103,10 +106,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.otabek.ecommerce.exception" />
+      <recent name="com.otabek.ecommerce.orderline" />
+      <recent name="com.otabek.ecommerce.order" />
       <recent name="com.otabek.ecommerce.product" />
-      <recent name="com.otabek.ecommerce.handler" />
       <recent name="com.otabek.ecommerce.customer" />
+      <recent name="com.otabek.ecommerce.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/services/product/src/main/java/com/otabek/ecommerce" />
@@ -143,6 +147,13 @@
     <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="discovery" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.otabek.discovery.DiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.otabek.ecommerce.OrderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,7 +220,9 @@
       <workItem from="1722252174808" duration="70000" />
       <workItem from="1722252254918" duration="13652000" />
       <workItem from="1722342776291" duration="3588000" />
-      <workItem from="1722593655414" duration="6513000" />
+      <workItem from="1722593655414" duration="13847000" />
+      <workItem from="1723046722571" duration="791000" />
+      <workItem from="1723281912503" duration="6676000" />
     </task>
     <task id="LOCAL-00001" summary="implemented Customer service">
       <option name="closed" value="true" />
@@ -219,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722255235890</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented Product service">
+      <option name="closed" value="true" />
+      <created>1722680381607</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722680381608</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +248,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented Customer service" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented Customer service" />
+    <MESSAGE value="implemented Product service" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented Product service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
